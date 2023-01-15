@@ -20,6 +20,10 @@ ul {
     list-style: none;
 }
 
+img {
+    vertical-align: middle;
+}
+
 .btn-primary {
     display: inline-block;
     font-size: 20px;
@@ -75,6 +79,11 @@ ul {
     line-height: 26px;
     text-align: center;
     color: #424242;
+    transition: .3s;
+}
+
+.menu-link:hover {
+    color: #FF900E;
 }
 
 /* Banner Area */
@@ -236,7 +245,6 @@ ul {
 .facts {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
     margin-top: 50px;
 }
@@ -245,6 +253,16 @@ ul {
     padding: 35px 45px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+
+.single-fact:hover {
+    background-color: #FF900E
+}
+
+.single-fact:hover .fact-number,
+.single-fact:hover .fact-title {
+    color: #fff;
 }
 
 .single-fact img {
@@ -255,9 +273,10 @@ ul {
 .fact-number {
     font-weight: 600;
     font-size: 45px;
+    line-height: 1;
     color: #424242;
     display: block;
-    margin: 15px 0 10px;
+    margin: 10px 0 5px;
 }
 
 .fact-title {
@@ -300,7 +319,7 @@ ul {
 .footer .container p {
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.3;
     text-align: center;
     color: #424242;
 }
@@ -310,4 +329,188 @@ ul {
     border-radius: 8px;
     padding: 35px 0;
     margin: 0 auto 40px;
+}
+
+/* Responsive Codes */
+
+/* Mobile Devices */
+@media only screen and (max-width: 668px) {
+
+    .container,
+    .banner-info,
+    .facts-info {
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-logo {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .menu-item {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .banner-info {
+        padding: 40px 0 40px;
+    }
+
+    .banner-title {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .banner-image img,
+    .single-team img,
+    .feature-img img {
+        width: 100%;
+    }
+
+    .menu-items,
+    .team-area .container,
+    .feature-area .container,
+    .facts,
+    .sponsor-gallery {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .team-title,
+    .section-title {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+
+    .team-thumb {
+        gap: 10px;
+    }
+
+    .feature-details {
+        margin-right: 0;
+    }
+
+    .feature-img {
+        margin-top: 30px;
+    }
+
+    .btn-container {
+        margin: 0;
+    }
+
+    .btn-container .btn-primary {
+        padding: 25px 45px;
+    }
+
+    .btn-primary span {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+
+    .single-fact {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .single-sponsor {
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium Devices */
+
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+
+    .section-title {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+
+    .container,
+    .banner-image img,
+    .banner-info,
+    .team-area .container,
+    .sponsor-info {
+        width: 100%;
+    }
+
+    .nav,
+    .sponsor-gallery,
+    .facts,
+    .team-area .container,
+    .feature-area .container {
+        flex-direction: column;
+    }
+
+    .site-logo {
+        margin-bottom: 24px;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner-info {
+        padding: 40px 0;
+    }
+
+    .single-fact {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feature-details {
+        margin-right: 0;
+    }
+
+    .feature-img {
+        margin-top: 30px;
+    }
+
+    .btn-container {
+        margin: 0;
+    }
+
+    .sponsor-area .container {
+        padding: 20px;
+    }
+
+    .single-sponsor {
+        margin-bottom: 20px;
+    }
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 993px) and (max-width: 1440px) {
+
+    img {
+        width: 100%;
+    }
+    .container,
+    .banner-image img,
+    .banner-info,
+    .team-area .container,
+    .sponsor-info {
+        width: 100%;
+    }
+
+    .btn-container {
+        margin: 0;
+    }
+
+    .feature-details {
+        margin-right: 0;
+    }
 }
