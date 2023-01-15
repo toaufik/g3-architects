@@ -210,7 +210,7 @@ img {
 
 .btn-container {
     text-align: center;
-    margin-top: -160px;
+    margin-top: -175px;
     margin-left: 100px;
 }
 
@@ -289,7 +289,7 @@ img {
 /* Sponsor Area */
 
 .sponsor-area .container {
-    padding: 70px 20px;
+    padding: 40px 20px 60px;
 }
 
 .sponsor-info {
@@ -312,6 +312,33 @@ img {
 
 .sponsor-gallery {
     padding: 25px 0;
+}
+
+/* Testimonial Area */
+
+.testimonial-area {
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+
+.testimonial-content {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.author-img {
+    width: 125px;
+    border-radius: 100%;
+    padding: 3px;
+    border: 1px solid #ddd;
+}
+
+.author-name {
+    font-size: 22px;
 }
 
 /* Footer Area */
@@ -388,6 +415,7 @@ img {
     }
 
     .team-thumb {
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
 
@@ -415,6 +443,10 @@ img {
     .single-fact {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .testimonial-area {
+        margin-top: 0;
     }
 
     .single-sponsor {
@@ -498,6 +530,7 @@ img {
     img {
         width: 100%;
     }
+
     .container,
     .banner-image img,
     .banner-info,
